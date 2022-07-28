@@ -412,7 +412,8 @@
       </div>
 
       <div class="footer-social">
-        <p class="footer-text"><strong class="footer-text">присоединяйтесь</strong></p>
+        <strong class="footer-text">присоединяйтесь</strong>
+
         <ul class="footer-social-list list">
           <li class="footer-social-item">
             <a class="footer-social-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
@@ -447,6 +448,26 @@
           </li>
         </ul>
       </div>
+
+      <div class="footer-form">
+        <strong class="footer-text">Подпишитесь на рассылку</strong>
+        <form name="send-form" autocomplete="on" novalidate>
+          <div class="send-form-wrapper">
+            <label class="send-form-mail">
+              <input class="send-form-input" type="email" name="mail" placeholder="E-mail" minlength="2" required>
+            </label>
+
+            <button class="send-form-btn btn-agreement" type="submit">
+              <span class="form-btn-lable">
+                Подписаться
+              </span>
+              <svg class="btn-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </footer>
 
@@ -457,9 +478,68 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+
+      <form class="register_form">
+
+        <strong class="register_form-text">Оставьте свои данные, мы вам перезвоним</strong>
+
+        <div class="form_user">
+          <span class="form_user-data">Имя</span>
+          <label for="user_name"></label>
+          <input class="register_form-input" type="text" name="username" id="user_name">
+          <svg class="form_icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+
+        <div class="form_user">
+          <span class="form_user-data">Телефон</span>
+          <label for="phone_number"></label>
+          <input class="register_form-input" type="tel" name="phone_number" id="phone_number">
+          <svg class="form_icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <div class="form_user">
+          <span class="form_user-data">Почта</span>
+          <label for="user_email"></label>
+          <input class="register_form-input" type="email" name="email" id="user_email">
+          <svg class="form_icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+
+        <label class="form_textarea">
+          <span class="form_textarea-title">Комментарий</span>
+          <textarea class="form_textarea-answer" name="comments" rows="7" placeholder="Введите текст"></textarea>
+        </label>
+
+        <label class="form_checkbox">
+          <input type="checkbox" class="visually-hidden  form_checkbox-input" name="user_agreement" checked>
+          <span class="form_checkbox-custom">
+            <svg class="form_checkbox-icon" width="13" height="10">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <span class="form_checkbox-agreement">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="form_checkbox_link" href="">Условия договора</a>
+          </span>
+        </label>
+
+        <div class="form_btn">
+          <button class="send-form-btn" type="submit">
+            <span class="form-btn-lable">
+              Отправить
+            </span>
+          </button>
+        </div>
+
+      </form>
     </div>
   </div>
-
+  svg
 
   <script src="./js/modal.js"></script>
 
@@ -467,3 +547,6 @@
 </body>
 
 </html>
+
+fill="white" stroke="white" stroke-width="0.2"
+<rect width="16" height="15" rx="2" />
